@@ -1,0 +1,56 @@
+* {
+  margin: 0 auto;
+}
+
+.role{
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.message{
+  text-align: center;
+}
+
+.comment-box{
+  display: inline-block;
+}
+
+.comment{
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  opacity: 0.9;
+  z-index: 9;
+}
+
+.intro{
+  width: 800px;
+  text-align: left;
+}
+
+
+.message-box{
+  display: inline-block;
+  /*color:red;*/
+  font-family: 'BrushScriptStd';
+  /*font-family: "Brush Script Std Medium";*/
+  src: url('./BrushScriptStd.eot');
+  font-weight: lighter;
+  src: local('BrushScriptStd'), url('./font/BrushScriptStd.woff') format('woff'), url('font/BrushScriptStd.ttf') format('truetype');
+  font-size:20px;
+  height: 200px;
+  background-color: #fff;
+  opacity: 0.9;
+  margin: 10px; 
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+

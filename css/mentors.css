@@ -1,0 +1,29 @@
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
+}
+
+main div.mentor {
+  width: calc(33% - 50px);
+  min-width: 300px;
+  margin: 20px;
+  background-color: white;
+}
+
+.mentor img {
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}
