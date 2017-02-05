@@ -4,6 +4,15 @@
 
 }
 
+div.logo{
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+img.logo{
+  width: 130px;
+}
 
 
 
