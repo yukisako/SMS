@@ -1,55 +1,23 @@
-/*@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-*/
-/**, *:after, *:before {
- -webkit-box-sizing: border-box; box-sizing: border-box;
-  z-index: 1;
-  }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; }*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+* {
 
-
-div.password{
-  z-index:9;
-  position:relative;
-  text-align: center;
 }
 
-#go{
-  display: inline-block;
-  margin-top: 0px;
-  text-align: center;
+.logo{
+  width: 100px;
+  margin-left: 20px;
+  text-align: left;
+  margin-right: -130px;
 }
 
-#go img{
-  width: 80px;
-}
-
-.content{
-  margin-top: -50px;
-  padding: 0;
-}
 
 div.head{
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: lighter;
   margin-top: 30px;
   text-align: center;
   font-size:40px;
-}
-
-div.logo{
-  text-align: right;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-
-img.logo{
-  width: 150px;
-}
-
-
-img.logo2{
-  width: 80px;
 }
 
 .red{
@@ -76,10 +44,42 @@ img.logo2{
   color:#bb39ff
 }
 
+.button-area{
+  text-align: center;
+}
+
+.button-box{
+  display: inline-block;
+  color:white;
+  font-family: lobster;
+  font-size:30px;
+  height: 200px;
+  background-color: #000000;
+  opacity: 0.5;
+  margin: 10px; 
+}
+
+.graduation-mentor{
+  width: 500px;
+}
+
+.photos{
+  width:200px;
+}
+
+.message{
+  width:200px;
+}
+
+.special-content{
+  width:500px;
+}
+
+
 /*particle-jsが画面いっぱいになる設定*/
 #particles-js {
 width: 100%;
-height: 485%;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
@@ -88,19 +88,4 @@ bottom: 0;
 display: block;
 z-index: 0;
 }
-
-.container {
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
-
-.content {
-  font-size: 150%;
-  padding: 3em 0;
-}
-
-
-
-
 
