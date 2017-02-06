@@ -50,6 +50,7 @@ div.head{
 
 .button-area{
   text-align: center;
+  position: relative;
 }
 
 .button-box{
@@ -63,20 +64,20 @@ div.head{
   margin: 10px; 
 }
 
-.graduation-mentor{
-  width: 500px;
+.mentors{
+  height: 300px;
 }
 
 .photos{
-  width:200px;
+  height: 300px;
 }
 
 .message{
-  width:200px;
+  height: 300px;
 }
 
 .special-content{
-  width:500px;
+  height: 300px;
 }
 
 
@@ -93,4 +94,6 @@ display: block;
 z-index: 0;
 }
 
-
+.top-head{
+  letter-spacing: 0.3em;
+}
