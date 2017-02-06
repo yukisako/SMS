@@ -98,9 +98,9 @@ img.logo{
 
 
 /*particle-jsが画面いっぱいになる設定*/
-/*#particles-js {
+#particles-js {
 width: 100%;
-height: 600%;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
@@ -109,7 +109,7 @@ bottom: 0;
 display: block;
 z-index: 0;
 }
-*/
+
 
 #submit{
   background-color: #fefefe;
