@@ -29,6 +29,7 @@ main div.mentor {
 main div.mentor:hover{
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 }
+
 .mentor img:hover{
   transition-duration: 0.5s;
   -moz-transform: rotate(360deg);
@@ -47,85 +48,18 @@ main div.mentor:hover{
   border-radius: 50%;
 }
 
-div.logo{
-  text-align: right;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-
-img.logo{
-  width: 130px;
-}
-
 
 
 div.head{
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: lighter;
   margin-top: 30px;
   text-align: center;
-  font-size:40px;
-}
-
-.red{
-  color:#e63c35;
-}
-
-.yellow{
-  color:#fac700;
-}
-
-.green{
-  color:#67b62d;
-}
-
-.blue{
-  color:#009bdb
-}
-
-.orange{
-  color:#ff8b22;
-}
-
-.purple{
-  color:#bb39ff
-}
-
-.button-area{
-  text-align: center;
-}
-
-.button-box{
-  display: inline-block;
-  color:white;
-  font-family: lobster;
   font-size:30px;
-  height: 200px;
-  background-color: #000000;
-  opacity: 0.5;
-  margin: 10px; 
+  position: relative;
 }
 
-.graduation-mentor{
-  width: 500px;
-}
-
-.photos{
-  width:200px;
-}
-
-.message{
-  width:200px;
-}
-
-.special-content{
-  width:500px;
-}
-
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-
-* {
-
+div.head h1{
+    font-weight: lighter;
 }
 
 div.logo{
@@ -137,7 +71,6 @@ div.logo{
 img.logo{
   width: 130px;
 }
-
 
 .red{
   color:#e63c35;

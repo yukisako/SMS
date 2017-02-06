@@ -40,6 +40,23 @@ img.logo2{
 }
 
 
+#submit{
+  font-size: 14px;
+  padding: 14px 80px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 100;
+  border: 3px solid #71767d;
+  background-color: rgba(0,0,0,0.0);
+  color: #e56c8a;
+  margin-top: 60px;
+}
 
+
+#submit:hover {
+  color: #006398;
+  background-color: #eeeee;
+  border: 3px solid #71767d;
+}
 
 
