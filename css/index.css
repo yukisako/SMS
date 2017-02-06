@@ -11,6 +11,7 @@ div.logo{
 }
 
 img.logo{
+  margin-right: -130px;
   width: 130px;
 }
 
@@ -65,19 +66,19 @@ div.head{
 }
 
 .mentors{
-  height: 300px;
+  width: 48%;
 }
 
 .photos{
-  height: 300px;
+  width:33.6%;
 }
 
 .message{
-  height: 300px;
+  width:33.6%;
 }
 
 .special-content{
-  height: 300px;
+  width: 48%;
 }
 
 
