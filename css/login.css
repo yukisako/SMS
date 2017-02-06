@@ -55,8 +55,13 @@ img.logo2{
 
 #submit:hover {
   color: #006398;
-  background-color: #eeeee;
+  /*background-color: #eeeeee;*/
   border: 3px solid #71767d;
 }
+
+/*
+input{
+  font-size: 20px !important;
+}*/
 
 
