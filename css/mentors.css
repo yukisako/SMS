@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 ul {
   display: flex;
   align-items: center;
@@ -20,18 +22,29 @@ main div.mentor {
   min-width: 300px;
   margin: 20px;
   background-color: white;
+  position:relative;
+  z-index: 9;
 }
+
+main div.mentor:hover{
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+.mentor img:hover{
+  transition-duration: 0.5s;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  width:300px;
+  height:300px;
+}
+
+
 
 .mentor img {
   width:150px;
   height:150px;
   border-radius: 50%;
-}
-
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-
-* {
-
 }
 
 div.logo{
@@ -108,3 +121,70 @@ div.head{
 .special-content{
   width:500px;
 }
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+
+}
+
+div.logo{
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+img.logo{
+  width: 130px;
+}
+
+
+.red{
+  color:#e63c35;
+}
+
+.yellow{
+  color:#fac700;
+}
+
+.green{
+  color:#67b62d;
+}
+
+.blue{
+  color:#009bdb
+}
+
+.orange{
+  color:#ff8b22;
+}
+
+.purple{
+  color:#bb39ff
+}
+
+
+/*particle-jsが画面いっぱいになる設定*/
+#particles-js {
+width: 100%;
+height: 600%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+z-index: 0;
+}
+
+#submit{
+  background-color: #fefefe;
+  color: #e56c8a;
+/*  border-radius: 10px;*/
+  margin-top: 60px;
+}
+
+
+
+
+
