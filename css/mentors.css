@@ -18,7 +18,7 @@ main {
 }
 
 main div.mentor {
-  width: calc(33% - 50px);
+  width: calc(30% - 50px);
   min-width: 300px;
   margin: 20px;
   background-color: white;
@@ -109,6 +109,7 @@ bottom: 0;
 display: block;
 z-index: 0;
 }
+
 
 #submit{
   background-color: #fefefe;
