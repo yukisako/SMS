@@ -1,0 +1,385 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: rgba(0,0,0,0.5);
+  background-image: url(./images/bg.jpg);
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+#container {
+  max-width:580px;
+  height:445px;
+  padding:10px;
+  margin:0 auto;
+  color:#fff;
+}
+#main {
+  position:relative;
+  width:100%;
+  height:350px;
+}
+/* readyPage */
+#readyPage {
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  width:100%;
+  height:100%;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#readyPage .txt1 {
+  margin-top:50px;
+  color:#fff;
+  font-family:serif;
+  font-size:12px;
+  font-weight:bold;
+  line-height:130%;
+  text-align:center;
+}
+#readyPage .txt2 {
+  margin-top:5px;
+  color:#fff;
+  font-size:12px;
+  font-family:serif;
+  font-weight:bold;
+  line-height:130%;
+  text-align:center;
+}
+#readyPage .txt3 {
+  margin-top:20px;
+  color:#fff;
+  font-family:serif;
+  font-size:18px;
+  font-weight:bold;
+  line-height:130%;
+  text-align:center;
+}
+#readyPage .txt4 {
+  margin-top:20px;
+  color:#fff;
+  font-family:serif;
+  font-size:24px;
+  font-weight:bold;
+  line-height:130%;
+  text-align:center;
+}
+/* stagePage */
+#stagePage {
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+#stagePage #comment {
+  position:absolute;
+  bottom:205px;
+  left:0;
+  width:100%;
+  color:#fff;
+  font-family:serif;
+  font-size:16px;
+  line-height:130%;
+  font-weight:bold;
+}
+#stagePage #question {
+  position:absolute;
+  top:160px;
+  left:0;
+  width:100%;
+  color:#fff;
+  font-family:serif;
+  font-size:36px;
+  line-height:130%;
+  font-weight:bold;
+}
+#stagePage #guide ,
+#stagePage #input {
+  position:absolute;
+  bottom:10px;
+  width:100%;
+  color:#ccc;
+  font-family:'Anonymous Pro';
+  font-size:24px;
+  font-weight:bold;
+  line-height:130%;
+  overflow:hidden;
+}
+#stagePage #guide {
+  color:#999;
+}
+#stagePage #input {
+  color:#000;
+}
+#stagePage #status {
+  position:absolute;
+  top:0;
+  right:0;
+  width:700px;
+}
+#stagePage #status .timer {
+  color:#ccc;
+  font-family:;
+  font-size:24px;
+  line-height:150%;
+  text-align: right;
+  font-weight:bold;
+}
+#stagePage #status .wrong,
+#stagePage #status .right {
+  float: right;
+  text-align: right;
+  margin-right: 30px;
+  color:#fff;
+  font-family:sans-serif;
+  font-size:2rem;
+  line-height:150%;
+  font-weight:bold;
+  width: 100px;
+}
+
+#stagePage #status .wrong {
+  margin-right: 0;
+}
+/* close */
+#closePage {
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*background: rgba(255,255,255,0.8);*/
+}
+#closePage .message {
+  margin-top:100px;
+  color:#000;
+  font-family:serif;
+  font-size:36px;
+  font-weight:bold;
+  line-height:140%;
+  text-align:center;
+}
+#closePage .right {
+  margin-top:10px;
+  color:#000;
+  font-family:serif;
+  font-size:24px;
+  font-weight:bold;
+  line-height:140%;
+  text-align:center;
+}
+#closePage .wrong {
+  margin-top:10px;
+  color:#000;
+  font-family:serif;
+  font-size:24px;
+  font-weight:bold;
+  line-height:140%;
+  text-align:center;
+}
+#closePage .retry {
+  margin:40px auto 0px auto;
+  width:150px;
+  border-radius:20px;
+  background:#AE2CE4;
+  color:#fff;
+  font-family:'Anonymous Pro';
+  font-size:24px;
+  font-weight:bold;
+  line-height:40px;
+  text-align:center;
+  cursor:pointer;
+}
+#closePage .retry:hover {
+  background: #fff;
+  color: #000;
+}
+#closePage .level {
+  position:absolute;
+  top:140px;
+  right:100px;
+  width:313px;
+  height:140px;
+}
+#closePage .level div {
+  display:table-cell;
+  width:220px;
+  height:220px;
+  background: #fff;
+  border:10px solid #AE2CE4;
+  border-radius:120px;
+  color:#AE2CE4;
+  font-family:serif;
+  font-size:20px;
+  font-weight:bold;
+  line-height:140%;
+  text-align:center;
+  vertical-align:middle;
+}
+#closePage .level div span {
+  display:block;
+  font-size:100px;
+}
+
+/* keybord */
+#keybord {
+  width:100%;
+  border-spacing:2px;
+  border-collapse:separate;
+}
+#keybord tr.dummy td {
+  width:3.4%;
+}
+#keybord td.key {
+  position:relative;
+  height:18px;
+  text-align:center;
+  vertical-align:middle;
+  /*background:#999;*/
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 5px;
+  color:rgba(255,255,255,0.1);
+  font-family:'Anonymous Pro';
+  font-size:12px;
+  font-weight:bold;
+  line-height:100%;
+  border-radius:2px;
+}
+#keybord td.key span {
+  position:absolute;
+  top:2px;
+  right:4px;
+  font-size:10px;
+  line-height:100%;
+}
+#keybord td.key.active {
+  background:rgba(255,255,255,1);
+  color: #000;
+}
+
+.correct {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.error {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/*saying*/
+
+.saying {
+  background-repeat: repeat;
+}
+
+.saying h1{
+  margin-bottom: 60px;
+
+}
+
+.saying #container {
+  color: #000;
+  width: 80%;
+  max-width: none;
+}
+
+.message {
+  background-image: url(./images/bg_birthday.jpg);
+  background-color: rgba(0,0,0,0.1);
+  background-repeat: repeat;
+}
+
+.message h1{
+  margin-bottom: 60px;
+
+}
+
+.message #container {
+  color: #000;
+  width: 80%;
+  max-width: none;
+}
+
+.list-saying,
+.list-birthday {
+  overflow: hidden;
+  list-style: none;
+}
+
+.list-saying li,
+.list-birthday li {
+  background: #fff;
+  float: left;
+  padding: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.list-saying h2,
+.list-birthday h2 {
+  font-size: 0.9rem;
+  color: #AE2CE4;
+}
+
+.list-saying p,
+.list-birthday p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*audio*/
+
+#control {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  list-style: none;
+}
+
+#control li {
+  float: right;
+  margin-left: 10px;
+}
+
+#control a,
+.player {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background: #AE2CE4;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+#control .player:hover,
+#control a:hover
+ {
+  background: #fff;
+  color: #AE2CE4;
+  cursor: pointer;
+}
+
+.player.muted {
+  background: #000;
+}

@@ -1,58 +1,12 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
-ul {
-  display: flex;
-  align-items: center;
-}
 
-ul li {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  text-align: center;
-}
-
-main div.mentor {
-  width: calc(33% - 50px);
-  min-width: 300px;
-  margin: 20px;
-  background-color: white;
-  position:relative;
-  z-index: 9;
-}
-
-main div.mentor:hover{
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
-}
-
-.mentor img:hover{
-  transition-duration: 0.5s;
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  width:300px;
-  height:300px;
-}
-
-
-
-.mentor img {
-  width:150px;
-  height:150px;
-  border-radius: 50%;
-}
 
 
 
 div.head{
   font-family: 'Noto Sans JP', sans-serif;
-  margin-top: 30px;
+  margin-top: -30px;
   text-align: center;
   font-size:30px;
   position: relative;
@@ -110,13 +64,21 @@ display: block;
 z-index: 0;
 }
 
-
-#submit{
-  background-color: #fefefe;
-  color: #e56c8a;
-/*  border-radius: 10px;*/
-  margin-top: 60px;
+.photo{
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+  text-align: center;
 }
+
+.thumb-item{
+  text-align: center;
+}
+
+.photo ul li img{
+  display: inline-block;
+}
+
 
 
 
