@@ -23,7 +23,11 @@ var Typing =
     Typing.rightPoint = 1;
     Typing.wrongPoint = 3;
     Typing.startKey = "F";
-    Typing.randomImageCount = 24;    // 小森さんの画像の数
+    Typing.randomImageCount = {
+      akasan:3,
+      sakuchan:2,
+      ha1f:1
+    }
     Typing.clearPoints = 300;
 
     Typing.ready();
@@ -32,7 +36,7 @@ var Typing =
 
 Typing.ready = function()
 {
-  Typing.second = 3;
+  Typing.second = 60;
   Typing.rightCount = 0;
   Typing.wrongCount = 0;
   Typing.datasIndex = [];
@@ -97,7 +101,7 @@ Typing.chooseQuestion = function()
 
   Typing.displayQuestion();
   Typing.dsiplayComment();
-  Typing.dsiplayname();
+  Typing.dsiplayname(Typing.data.name);
   Typing.displayCharacters();
   Typing.activeKeybord();
   Typing.setTypingHandler(Typing.typing);
@@ -506,15 +510,21 @@ Typing.prefixWithZero = function (value) {
   }
 }
 
-Typing.pickRandomImage = function () {
-  var randomNumber = Math.floor((Math.random() * Typing.randomImageCount) + 1);
-  return "komori" + Typing.prefixWithZero(randomNumber) + ".jpg";
+// Typing.pickRandomImage = function () {
+//   var randomNumber = Math.floor((Math.random() * Typing.randomImageCount) + 1);
+//   return "komori" + Typing.prefixWithZero(randomNumber) + ".jpg";
+// };
+
+Typing.pickRandomImage = function (value) {
+  var randomNumber = Math.floor((Math.random() * Typing.randomImageCount[value]) + 1);
+  return value + Typing.prefixWithZero(randomNumber) + ".jpg";
 };
 
-Typing.dsiplayname = function()
-{
-  var imageName = Typing.pickRandomImage();
 
+Typing.dsiplayname = function(value)
+{
+  var imageName = Typing.pickRandomImage(value);
+  alert(imageName);
   $('body').css({
     backgroundImage : 'url(images/' + imageName + ')'
       // background : "#000"
@@ -992,7 +1002,7 @@ comment:"Twitter"
 to:"ありたく",
 name:"aritaku",
 question:"文学ってどういう点に価値が出てくるのか知りたい",
-kana:"ブンガクッテドウイウテンニヒョウカガデテクルノカシリタイ",
+kana:"ブンガクッテドウイウテンニカチガデテクルノカシリタイ",
 comment:"Twitter"
 },
 {
