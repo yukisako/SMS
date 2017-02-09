@@ -524,7 +524,7 @@ Typing.pickRandomImage = function (value) {
 Typing.dsiplayname = function(value)
 {
   var imageName = Typing.pickRandomImage(value);
-  alert(imageName);
+  // alert(imageName);
   $('body').css({
     backgroundImage : 'url(images/' + imageName + ')'
       // background : "#000"
