@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
-* {
-
+body{
+  margin-top: 50px;
+  background-color: #eeeeee;
 }
-
 div.logo{
   text-align: right;
   margin-right: 50px;
@@ -11,16 +11,16 @@ div.logo{
 }
 
 img.logo{
-  margin-right: -130px;
-  width: 130px;
+  margin-right: -150px;
+  width: 180px;
 }
 
 
 
 div.head{
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: lighter;
-  margin-top: 30px;
+  font-weight: 300;
+  margin-top: 0px;
   text-align: center;
   font-size:40px;
 }
@@ -62,25 +62,28 @@ div.head{
   height: 200px;
   background-color: #000000;
   opacity: 0.5;
-  margin: 10px; 
 }
 
 .mentors{
-  width: 48%;
+  width: 43%;
 }
 
 .photos{
-  width:33.6%;
+  width:30%;
 }
 
 .message{
-  width:33.6%;
+  margin-top: 8px;
+  width:30%;
 }
 
 .special-content{
-  width: 48%;
+  width: 43%;
 }
 
+.button-area a{
+  margin: 5px;
+}
 
 /*particle-jsが画面いっぱいになる設定*/
 #particles-js {
@@ -96,5 +99,5 @@ z-index: 0;
 }
 
 .top-head{
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
 }
