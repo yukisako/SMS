@@ -15,12 +15,13 @@
 
 </head>
 <body>
-
+    <a href="top.html">
   <div class="logo">
-  <a href="top.html">
-    <img class="logo2" src="./image/logo2.png" alt="">
-    </a>
+
+      <img class="logo2" src="./image/logo2.png" alt="">
+
   </div>
+      </a>
   <div>
     <div class="head">
       <span class="red">M</span>
@@ -48,19 +49,19 @@
   <script src="js/script.js"></script>
 
   <script type="text/javascript">
-$(document).ready(function(){
-  $('.fuwat').css('visibility','hidden');
-  $(window).scroll(function(){
-   var windowHeight = $(window).height(),
-       topWindow = $(window).scrollTop();
-   $('.fuwat').each(function(){
-    var objectPosition = $(this).offset().top;
-    if(topWindow > objectPosition - windowHeight + 200){
-     $(this).addClass("fuwatAnime");
-    }
-   });
-  });
-});
+    $(document).ready(function(){
+      $('.fuwat').css('visibility','hidden');
+      $(window).scroll(function(){
+       var windowHeight = $(window).height(),
+           topWindow = $(window).scrollTop();
+       $('.fuwat').each(function(){
+        var objectPosition = $(this).offset().top;
+        if(topWindow > objectPosition - windowHeight + 200){
+         $(this).addClass("fuwatAnime");
+        }
+       });
+      });
+    });
 </script>
 
 </body>
