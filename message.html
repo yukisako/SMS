@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
   <link rel="stylesheet" href="css/message.css" type="text/css">
-  <link rel="stylesheet" href="css/login.css" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <title>SMS</title>
 
@@ -21,31 +21,46 @@
   </div>
   <div>
     <div class="head">
-      <span class="red">P</span>
+      <span class="red">M</span>
       <span class="blue">A</span>
-      <span class="green">S</span>
-      <span class="purple">S</span>
-      <span class="orange">W</span>
-      <span class="blue">O</span>
-      <span class="red">R</span>
-      <span class="green">D</span>
+      <span class="green">T</span>
+      <span class="purple">E</span>
+      <span class="orange">R</span>
+      <span class="blue">I</span>
+      <span class="red">A</span>
+      <span class="green">L</span>
     </div>
   </div>
-  <div class="container">
-  <section class="content">
-    <span class="input input--kuro">
-      <input class="input__field input__field--kuro" type="password" id="password" />
-      <label class="input__label input__label--kuro" for="input-9">
-        <span class="input__label-content input__label-content--kuro">Secret Code</span>
-      </label>
-      <input id="submit" type="submit" value="Access">
-    </span>
-  </section>
+
+  <div class="contents">
+    <div class="fuwa2t"><img src="image/album/1.jpg" alt=""></div>
+    <div class="fuwat"><img src="image/album/2.jpg" alt=""></div>
+    <div class="fuwat"><img src="image/album/3.jpg" alt=""></div>
+    <div class="fuwat"><img src="image/album/4.jpg" alt=""></div>
+
+  </div>
 
   <div id="particles-js"></div>
   <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
   <script src="js/script.js"></script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('.fuwat').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.fuwat').each(function(){
+    var objectPosition = $(this).offset().top;
+    if(topWindow > objectPosition - windowHeight + 200){
+     $(this).addClass("fuwatAnime");
+    }
+   });
+  });
+});
+</script>
+
 </body>
 </html>
 
