@@ -24,9 +24,19 @@ var Typing =
     Typing.wrongPoint = 3;
     Typing.startKey = "F";
     Typing.randomImageCount = {
-      akasan:3,
-      sakuchan:2,
-      ha1f:1
+      akasan:23,
+      aritaku:9,
+      antony:13,
+      orin:1,
+      kunimu:20,
+      zakio:6,
+      saku:13,
+      bassy:17,
+      ha1f:18,
+      manafy:1,
+      yokun:29,
+      yoshi:10,
+      rinrin:2
     }
     Typing.clearPoints = 300;
 
@@ -494,7 +504,7 @@ Typing.displayCharacters = function()
 
 Typing.dsiplayComment = function()
 {
-  Typing.commentArea.text("To:"+Typing.data.to + "　　From:"+Typing.data.comment)
+  Typing.commentArea.text(Typing.data.to + "　　From "+Typing.data.comment)
 }
 
 Typing.prefixWithZero = function (value) {
