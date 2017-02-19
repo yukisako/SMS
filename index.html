@@ -2,33 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>卒業メンター企画</title>
-  <style>
-    body{
-      background-image: url(image/background.jpg);
-      background-size: cover;
-    }
-    .contents{
-      margin-top: 300px;
-      text-align: center;
-      color: white;
-      font-size: 25px;
-      font-weight: lighter;
-    }
-    .password{
-      text-align: center;
-      color: white;
-      font-size: 40px;
-      font-weight: lighter;
-      letter-spacing: 0.1em;
-    }
-    .small{
-      font-size: 0.7em;
-    }
-  </style>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <title>SMS</title>
+
+    <style>
+      * {
+        background-color: white;
+      }
+
+      .nazo{
+        text-align: center;
+      }
+      .nazo img{
+        margin-top: 100px;
+        width: 1000px;
+        z-index: 9;
+        position: relative;
+      }
+    </style>
 </head>
 <body>
-    <p class="contents">https://litkansai2017-graduation.github.io/SMS/①②③④</p>
-    <p class="password">◯<span class="small">◯◯◯◯◯</span>◯<span class="small">◯③①◯</span>④◯◯◯②◯</p>
+  <div id="particles-js"></div>
+
+  <div class="nazo">
+    <img src="image/nazo.png" alt="">
+  </div>
+
+  <script>
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+ 
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+ 
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
