@@ -24,19 +24,23 @@ var Typing =
     Typing.wrongPoint = 3;
     Typing.startKey = "F";
     Typing.randomImageCount = {
-      akasan:23,
-      aritaku:9,
-      antony:13,
+      akasan:5,
+      amosuke:1
+      aritaku:4,
+      antony:5,
       orin:1,
-      kunimu:20,
-      zakio:6,
-      saku:13,
-      bassy:17,
-      ha1f:18,
+      kunimu:4,
+      zakio:3,
+      saku:6,
+      bassy:7,
+      miyosshi:3,
+      ha1f:6,
       manafy:1,
-      yokun:29,
-      yoshi:10,
-      rinrin:2
+      yokun:6,
+      yoshi:5,
+      rinrin:2,
+      su:5,
+      tsuruchan:1
     }
     Typing.clearPoints = 300;
 
