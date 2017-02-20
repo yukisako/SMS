@@ -25,7 +25,7 @@ var Typing =
     Typing.startKey = "F";
     Typing.randomImageCount = {
       akasan:5,
-      amosuke:1
+      amosuke:1,
       aritaku:4,
       antony:5,
       orin:1,
