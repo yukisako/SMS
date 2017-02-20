@@ -1074,7 +1074,7 @@ comment:"けーちゃん"
 {
 to:"さくちゃん",
 name:"saku",
-question:"今度飲みにいこ",
+question:"今度飲みいこ",
 kana:"コンドノミイコ",
 comment:"Twitter"
 },
