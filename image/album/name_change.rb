@@ -22,7 +22,7 @@ Dir.glob("*.#{target}").each_with_index do |filename, index|
   nums.push index
 end
 
-nums.shuffle
+nums.shuffle!
 
 Dir.glob("*.#{target}").each_with_index do |filename, index|
   newname = filename.gsub(/.+(?=\.[^.]+$)/) { sprintf("%s%d", prefix, nums[index]) }
